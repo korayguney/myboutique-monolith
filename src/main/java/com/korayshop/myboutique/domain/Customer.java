@@ -23,10 +23,10 @@ import java.util.Set;
 public class Customer extends AbstractEntity {
 
     @Column(name = "first_name")
-    private String firstname;
+    private String firstName;
 
     @Column(name = "last_name", nullable = false)
-    private String lastname;
+    private String lastName;
 
     @Column(name = "email")
     private String email;
@@ -37,5 +37,8 @@ public class Customer extends AbstractEntity {
     @OneToMany(mappedBy = "customer")
     @JsonIgnore
     private Set<Cart> carts;
+
+    @Column(name = "enabled", nullable = false)
+    private Boolean enabled;
 
 }

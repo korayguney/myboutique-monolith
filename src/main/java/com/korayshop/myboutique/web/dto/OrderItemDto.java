@@ -3,11 +3,11 @@ package com.korayshop.myboutique.web.dto;
 import lombok.AllArgsConstructor;
 import lombok.Data;
 
-@Data
 @AllArgsConstructor
-public class CartDto {
+@Data
+public class OrderItemDto {
     private Long id;
+    private Long quantity;
+    private Long productId;
     private Long orderId;
-    private CustomerDto customerDto;
-    private String status;
 }

@@ -5,9 +5,9 @@ import lombok.Data;
 
 @Data
 @AllArgsConstructor
-public class CartDto {
+public class PaymentDto {
     private Long id;
-    private Long orderId;
-    private CustomerDto customerDto;
+    private String paypalPaymentId;
     private String status;
+    private Long orderId;
 }

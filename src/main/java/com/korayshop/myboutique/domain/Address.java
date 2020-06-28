@@ -29,7 +29,7 @@ public class Address {
     @NotNull
     @Size(max = 10)
     @Column(name = "postcode", nullable = false, length = 10)
-    private String postalCode;
+    private String postCode;
 
     @NotNull
     @Size(max = 2)

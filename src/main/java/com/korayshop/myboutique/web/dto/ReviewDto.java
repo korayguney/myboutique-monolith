@@ -5,9 +5,9 @@ import lombok.Data;
 
 @Data
 @AllArgsConstructor
-public class CartDto {
+public class ReviewDto {
     private Long id;
-    private Long orderId;
-    private CustomerDto customerDto;
-    private String status;
+    private String title;
+    private String description;
+    private Long rating;
 }
