@@ -4,6 +4,7 @@ import com.korayshop.myboutique.service.PaymentService;
 import com.korayshop.myboutique.web.dto.PaymentDto;
 import com.korayshop.myboutique.web.utility.Web;
 import lombok.RequiredArgsConstructor;
+import org.springframework.beans.factory.annotation.Autowired;
 import org.springframework.web.bind.annotation.*;
 
 import java.util.List;
@@ -12,6 +13,7 @@ import java.util.List;
 @RestController
 @RequestMapping(Web.API + "/payments")
 public class PaymentController {
+    @Autowired
     private final PaymentService paymentService;
 
     @GetMapping
